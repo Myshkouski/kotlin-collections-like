@@ -1,6 +1,4 @@
-package dev.myshkouski.kotlin.collections.like.map
-
-import dev.myshkouski.kotlin.collections.like.iterator.IteratorLike
+package dev.myshkouski.kotlin.collections.like.iterator
 
 private class TransformIteratorLikeImpl<T, U>(
     private val iteratorLike: IteratorLike<T>,
