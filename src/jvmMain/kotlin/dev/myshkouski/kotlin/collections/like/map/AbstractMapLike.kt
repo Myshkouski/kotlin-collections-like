@@ -2,6 +2,7 @@ package dev.myshkouski.kotlin.collections.like.map
 
 import dev.myshkouski.kotlin.collections.like.iterator.IteratorLike
 import dev.myshkouski.kotlin.collections.like.iterator.iteratorLike
+import dev.myshkouski.kotlin.collections.like.iterator.map
 
 internal sealed class AbstractMapLike<K, out V> : MapLike<K, V> {
     protected abstract val map: Map<K, V>
