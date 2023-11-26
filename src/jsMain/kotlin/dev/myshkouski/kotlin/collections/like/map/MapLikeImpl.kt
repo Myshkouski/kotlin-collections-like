@@ -15,5 +15,3 @@ private fun <K, V> PairLike<K, V>.toJsTuple2(): JsTuple2<K, V> = arrayOf(key, va
 internal fun <K, V> Array<out PairLike<K, V>>.toJsTuples(): Array<out JsTuple2<K, V>> = Array(size) { get(it).toJsTuple2() }
 
 actual fun <K, V> mapLikeOf(vararg pairs: PairLike<K, V>): MapLike<K, V> = MapLikeImpl(*pairs.toJsTuples())
-
-
