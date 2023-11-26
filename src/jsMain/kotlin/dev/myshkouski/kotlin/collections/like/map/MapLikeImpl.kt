@@ -1,7 +1,15 @@
 package dev.myshkouski.kotlin.collections.like.map
 
 import js.core.JsTuple2
+import js.collections.JsMap
 
+/**
+ * [MapLike] implementation backed by [JsMap].
+ * Please note that key equality in JS is based on SameValueZero algorithm.
+ * Refer to [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map#key_equality) for more info.
+ *
+ * @param values map entries to add
+ */
 @OptIn(ExperimentalJsExport::class)
 @JsExport
 class MapLikeImpl<K, V>(vararg values: JsTuple2<K, V>) : AbstractMapLike<K, V>(*values)
