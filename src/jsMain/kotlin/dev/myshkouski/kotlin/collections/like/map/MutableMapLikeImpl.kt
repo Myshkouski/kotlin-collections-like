@@ -2,7 +2,7 @@ package dev.myshkouski.kotlin.collections.like.map
 
 import dev.myshkouski.kotlin.collections.like.Destination
 import dev.myshkouski.kotlin.collections.like.iterator.IteratorLike
-import js.core.JsTuple2
+import js.array.JsTuple2
 
 @OptIn(ExperimentalJsExport::class)
 @JsExport

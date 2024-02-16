@@ -3,8 +3,8 @@ package dev.myshkouski.kotlin.collections.like.map
 import dev.myshkouski.kotlin.collections.like.iterator.IteratorLike
 import dev.myshkouski.kotlin.collections.like.iterator.asIteratorLike
 import dev.myshkouski.kotlin.collections.like.iterator.map
+import js.array.JsTuple2
 import js.collections.JsMap
-import js.core.JsTuple2
 import js.iterable.toArray
 
 sealed class AbstractMapLike<K, V>(vararg values: JsTuple2<K, V>) : MapLike<K, V> {

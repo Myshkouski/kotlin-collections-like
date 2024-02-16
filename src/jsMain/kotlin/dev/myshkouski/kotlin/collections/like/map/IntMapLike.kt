@@ -1,6 +1,6 @@
 package dev.myshkouski.kotlin.collections.like.map
 
-import js.core.JsTuple2
+import js.array.JsTuple2
 
 @OptIn(ExperimentalJsExport::class)
 @JsExport
