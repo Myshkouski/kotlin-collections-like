@@ -35,7 +35,7 @@ kotlin {
 
         jsMain {
             dependencies {
-                implementation("org.jetbrains.kotlin-wrappers:kotlin-js:1.0.0-pre.647")
+                implementation("org.jetbrains.kotlin-wrappers:kotlin-js:1.0.0-pre.697")
             }
         }
     }
