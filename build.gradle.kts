@@ -41,7 +41,7 @@ kotlin {
             implementation(kotlin("test"))
         }
         jsMain.dependencies {
-            implementation("org.jetbrains.kotlin-wrappers:kotlin-js:1.0.0-pre.709")
+            implementation("org.jetbrains.kotlin-wrappers:kotlin-js:1.0.0-pre.754")
         }
     }
 }
