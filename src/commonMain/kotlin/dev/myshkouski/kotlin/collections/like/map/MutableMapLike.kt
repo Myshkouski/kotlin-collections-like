@@ -8,6 +8,7 @@ interface MutableMapLike<K, V> : MapLike<K, V>, Destination<PairLike<K, V>> {
     fun delete(key: K)
 }
 
+expect fun <K, V> mutableMapLikeOf(): MutableMapLike<K, V>
 expect fun <K, V> mutableMapLikeOf(vararg pairs: PairLike<K, V>): MutableMapLike<K, V>
 expect fun <K, V> mutableMapLikeOf(vararg pairs: Pair<K, V>): MutableMapLike<K, V>
 

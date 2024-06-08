@@ -11,3 +11,7 @@ actual fun <K, V> mutableMapLikeOf(vararg pairs: Pair<K, V>): MutableMapLike<K, 
 actual fun <K, V> MapLike<K, V>.toMutableMapLike(): MutableMapLike<K, V> {
     TODO("Not yet implemented")
 }
+
+actual fun <K, V> mutableMapLikeOf(): MutableMapLike<K, V> {
+    TODO("Not yet implemented")
+}

@@ -2,6 +2,8 @@ package dev.myshkouski.kotlin.collections.like.map
 
 import dev.myshkouski.kotlin.collections.like.iterator.toIterable
 
+actual fun <K, V> mapLikeOf(): MapLike<K, V> = DefaultMapLikeImpl()
+
 actual fun <K, V> mapLikeOf(vararg pairs: Pair<K, V>): MapLike<K, V> = DefaultMapLikeImpl(*pairs)
 
 actual fun <K, V> mapLikeOf(vararg pairs: PairLike<K, V>): MapLike<K, V> = DefaultMapLikeImpl(*pairs.asIterable().toPairs())

@@ -16,8 +16,6 @@ class MutableMapLikeImpl<K, V>(vararg values: JsTuple2<K, V>) : AbstractMapLike<
     }
 }
 
-actual fun <K, V> mutableMapLikeOf(vararg pairs: PairLike<K, V>): MutableMapLike<K, V> = MutableMapLikeImpl(*pairs.toJsTuples())
-
 actual fun <K, V> mutableMapLikeOf(vararg pairs: Pair<K, V>): MutableMapLike<K, V> = MutableMapLikeImpl(*pairs.toJsTuples())
 
 private fun <T> IteratorLike<T>.collectTo(destination: Destination<T>) {

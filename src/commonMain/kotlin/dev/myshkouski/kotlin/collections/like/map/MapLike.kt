@@ -23,6 +23,19 @@ interface MapLike<K, out V> {
     fun has(key: K): Boolean
 }
 
+fun <K, V> MapLike<K, V>.getOrElse(key: K, block: () -> V): V {
+    return if (has(key)) get(key) as V else block()
+}
+
+fun <K, V> MapLike<K, V>.isEmpty(): Boolean {
+    return size == 0
+}
+
+fun <K, V> MapLike<K, V>.isNotEmpty(): Boolean {
+    return size != 0
+}
+
+expect fun <K, V> mapLikeOf(): MapLike<K, V>
 expect fun <K, V> mapLikeOf(vararg pairs: PairLike<K, V>): MapLike<K, V>
 expect fun <K, V> mapLikeOf(vararg pairs: Pair<K, V>): MapLike<K, V>
 
