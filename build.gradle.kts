@@ -1,10 +1,10 @@
 plugins {
-    kotlin("multiplatform") version("1.9.22")
+    alias(libs.plugins.kotlin.multiplatform)
     `maven-publish`
 }
 
 group = "dev.myshkouski.kotlin"
-version = "0.1.1"
+version = "0.1.2"
 
 repositories {
     mavenCentral()
@@ -41,7 +41,7 @@ kotlin {
             implementation(kotlin("test"))
         }
         jsMain.dependencies {
-            implementation("org.jetbrains.kotlin-wrappers:kotlin-js:1.0.0-pre.754")
+            implementation(libs.kotlin.wrappers.js)
         }
     }
 }
