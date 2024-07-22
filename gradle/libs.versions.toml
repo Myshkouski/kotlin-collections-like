@@ -1,6 +1,6 @@
 [versions]
 kotlin = "2.0.0"
-kotlin_wrappers_js = "1.0.0-pre.754"
+kotlin_wrappers_js = "1.0.0-pre.780"
 
 [libraries]
 kotlin_wrappers_js = { group = "org.jetbrains.kotlin-wrappers", name = "kotlin-js", version.ref = "kotlin_wrappers_js" }
